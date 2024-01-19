@@ -5,6 +5,7 @@ service.type: LoadBalancer
 service.ports.http: ""
 service.ports.https: ""
 ingress.enabled: false
+ingress.ingressClassName: ""
 ```
 Zmieniono na:
 ```yaml
@@ -12,6 +13,7 @@ service.type: NodePort
 service.ports.http: 30080
 service.ports.https: 30443
 ingress.enabled: true
+ingress.ingressClassName: nginx
 ```
 Instalacja
 ```console
